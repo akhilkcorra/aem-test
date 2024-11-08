@@ -12,3 +12,4 @@ jobs:
     - run: |
         echo "Status: ${{ github.event.client_payload.status }}"
         echo "Path: ${{ github.event.client_payload.path }}"
+        echo "Whole payload ${{ toJSON(github.event.client_payload) }}"
